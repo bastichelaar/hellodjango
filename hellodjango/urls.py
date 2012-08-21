@@ -5,6 +5,7 @@ from django.conf.urls import patterns, include, url
 # admin.autodiscover()
 
 urlpatterns = patterns('',
+    (r'^$', 'django.views.generic.simple.direct_to_template', {'template': 'home.html'}),
     # Examples:
     # url(r'^$', 'hellodjango.views.home', name='home'),
     # url(r'^hellodjango/', include('hellodjango.foo.urls')),
